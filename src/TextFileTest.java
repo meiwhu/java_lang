@@ -1,6 +1,7 @@
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.io.Serializable;
 import java.nio.charset.StandardCharsets;
 import java.time.LocalDate;
 import java.util.Arrays;
@@ -62,7 +63,7 @@ public class TextFileTest {
 
 }
 
-class Employee {
+class Employee implements Serializable {
     private String name;
     private double salary;
     private LocalDate hireDay;
